@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background: #67B7B0;
+        }
+        .header {
+            padding: 30px;
+            color: #853439;
+            text-align: center;
+            background: #67B7B0;
+        }
+        .header h1 {
+            font-size: 100px;
+            margin: 0;
+            opacity: 70%;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #853439;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: #853439;
+            color: black;
+        }
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #67B7B0;
+            padding-left: 20px;
+        }
+        .fakeimg {
+            background-color: #853439;
+            width: 100%;
+            padding: 10px;
+        }
+        .fakeimg img {
+            max-width: 100%;
+            height: auto;
+        }
+        .card {
+            background-color: #4B0D0B;
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer {
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            background: #853439;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>STRANGER THINGS</h1>
+        <p>Stranger Things is an American science fiction horror drama television series created by the Duffer Brothers for Netflix.</p>
+    </div>
+    <div class="topnav">
+        <a href="#">Horror</a>
+        <a href="#">Mystery</a>
+        <a href="#">Science fiction</a>
+        <a href="#" style="float:right">Cast</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Stranger Things</h2>
+                <h5>Stranger Things Season 5 has officially started filming. See a photo of the cast back on set now</h5>
+                <div class="fakeimg"><img src="images/StrangerThingslogo.png" alt="Stranger Things Logo"></div>
+                <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                <p>12-year-old Will Byers encounters the creature and mysteriously vanishes while cycling home from a Dungeons & Dragons session with his friends Mike Wheeler, Dustin Henderson and Lucas Sinclair.</p>
+            </div>
+            <div class="card">
+                <h2>Stranger Things</h2>
+                <h5>Stranger Things Season 5 has officially started filming. See a photo of the cast back on set now</h5>
+                <div class="fakeimg"><img src="images/MindFlayer.jpg" alt="Mind Flayer"></div>
+                <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                <p>12-year-old Will Byers encounters the creature and mysteriously vanishes while cycling home from a Dungeons & Dragons session with his friends Mike Wheeler, Dustin Henderson and Lucas Sinclair.</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Stranger Things</h2>
+                <div class="fakeimg"><img src="images/poster.jpg" alt="Poster"></div>
+                <p>With selfless hearts and a clash of metal, heroes fight from every corner of the battlefield to save Hawkins and the world itself.</p>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg"><img src="images/Stranger Things.jpg" alt="Popular Post 1"></div>
+                <div class="fakeimg"><img src="images/Stranger Things 2.jpg" alt="Popular Post 2"></div>
+                <div class="fakeimg"><img src="images/Stranger_Things__The_Experience.jpg" alt="Popular Post 3"></div>
+            </div>
+            <div class="card">
+                <h3>Follow Stranger Things</h3>
+                <p>some text...</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
